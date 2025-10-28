@@ -17,17 +17,26 @@ export default function Navbar(){
                         Laboratory of Robotics & Automation
                     </h1>
                 </div>
-                {/*  Navigation */}
-                <div className="hidden md:block">
-                    <div className="flex items-baseline space-x-8">
-                        {navItems.map(item =>(
-                            <Link className="text-foreground hover:text-primary px-3 py-2 text-1xl
-                            font-medium transition-colors duration-300" key={item.name} href={item.href}>{item.name}</Link>))}
-                    </div>
-                </div>
-                <div className="hidden md:flex items-center space-x-4">
-                    <Button className="font-semibold">Login</Button>
-                </div>
+{/* Navigation */}
+<div className="hidden lg:block">
+  <div className="flex items-baseline space-x-8">
+    {navItems.map(item => (
+      <Link
+        key={item.name}
+        href={item.href}
+        className="text-foreground hover:text-primary px-3 py-2 text-lg font-medium transition-colors duration-300"
+      >
+        {item.name}
+      </Link>
+    ))}
+  </div>
+</div>
+
+{/* Login Button */}
+<div className="hidden lg:flex items-center space-x-4">
+  <Button className="font-semibold">Login</Button>
+</div>
+
             </div>
           </div>
        </nav>

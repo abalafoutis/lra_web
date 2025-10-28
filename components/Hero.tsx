@@ -60,9 +60,9 @@ export default function Hero() {
           </Button>
         </div>
 
-        {/* 👇 Animated robot icon — visible only on large screens */}
-        <div className="hidden lg:block absolute bottom-8 left-1/2 -translate-x-1/2 z-20">
-          <VscRobot className="text-6xl text-primary animate-bounce" />
+        {/* Animated robot icon — visible only on large screens */}
+        <div className="hidden lg:block absolute bottom-2 left-1/2 -translate-x-1/2 z-20">
+          <VscRobot className="text-5xl text-primary animate-bounce" />
         </div>
       </div>
     </section>
