@@ -24,7 +24,7 @@ export default function Navbar(){
       <Link
         key={item.name}
         href={item.href}
-        className="text-foreground hover:text-primary px-3 py-2 text-lg font-medium transition-colors duration-300"
+        className="text-foreground hover:text-primary px-3 py-2 text-1xl font-medium transition-colors duration-300"
       >
         {item.name}
       </Link>
