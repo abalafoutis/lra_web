@@ -26,7 +26,7 @@ export default function Hero() {
                    justify-between py-20 sm:py-24 md:py-28 lg:py-0 lg:justify-center"
       >
         {/* Heading */}
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black font-heading mb-4 leading-tight">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black font-heading mb-4 leading-tight">
           Intelligence in Motion
           <br />
           <span className="text-chart-4">Shaping the Future of Robotics</span>
