@@ -1,4 +1,8 @@
+import { programs } from "@/lib/constants";
 import * as motion from "motion/react-client";
+import { Card, CardContent } from "./ui/card";
+import Image from "next/image";
+import { Button } from "./ui/button";
 
 export default function Programs() {
   return (
@@ -34,6 +38,48 @@ export default function Programs() {
             </div>
 
             {/* Cards */}
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                {programs.map((program, index) =>(
+                    <motion.div 
+                     key={program.id || index} 
+                     className="group cursor-pointer">
+                        <Card className="p-0 transition-shadow duration-300 hover:shadow-2xl">
+                            <div className="relative overflow-hidden rounded-t-lg w-full h-60 
+                            md:h-56 lg:h-40">
+                                <Image src={program.image} fill alt={program.title}
+                                className="object-cover transition-transform duration-500 
+                                group-hover:scale-110"/>
+                            </div>
+                            <CardContent className="p-6 pt-0">
+                                <motion.h3 
+                                   initial={{opacity: 0, y:8}} 
+                                   whileInView={{opacity: 1, y:0}}
+                                   viewport={{once: true}}
+                                   transition={{duration: 0.5, ease:"easeOut", delay: index * 0.2}}
+                                className="text-xl font-bold font-heading mb-3
+                                text-foreground group-hover:text-primary transition-colors">
+                                    {program.title}
+                                </motion.h3>
+                                <motion.p 
+                                   initial={{opacity: 0, y:6}} 
+                                   whileInView={{opacity: 1, y:0}}
+                                   viewport={{once: true}}
+                                   transition={{duration: 0.5, ease:"easeOut", delay: index * 0.3}}
+                                className="text-muted-foreground mb-4 leading-relaxed">
+                                    {program.description}
+                                </motion.p>
+                                <div>
+                                    <Button variant="outline" className="w-full 
+                                     transition-colors duration-300 group-hover: bg-primary group-hover:text-primary-foreground">
+                                        Learn more
+                                    </Button>
+                                </div>
+                            </CardContent>
+                        </Card>
+                    </motion.div>
+                ))}
+            </div>
 
 
 

@@ -7,21 +7,25 @@ export const navItems = [
 ];
 
 export const programs = [
-    { title: "First Tile",
-      description: "My first description my friend",
-      image: "/"
-    },
-    { title: "Second Tile",
-      description: "My second description my friend",
-      image: "/"
-    },
-        { title: "Third Tile",
-      description: "My third description my friend",
-      image: "/"
-    },
-        { title: "Forth Tile",
+    { id:1,
+      title: "Teaching",
       description: "My forth description my friend",
-      image: "/"
+      image: "/teach.jpg"
+    },
+    { id:2,
+      title: "Research Topics",
+      description: "My first description my friend",
+      image: "/research.jpg"
+    },
+    { id:3,
+      title: "People",
+      description: "My second description my friend",
+      image: "/people.jpg"
+    },
+    { id:4,
+      title: "Projects",
+      description: "My third description my friend",
+      image: "/projects.png"
     },
 
 ];
