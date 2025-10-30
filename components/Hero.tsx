@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Button } from "./ui/button";
 import { VscRobot } from "react-icons/vsc";
+import * as motion from "motion/react-client";
 
 export default function Hero() {
   return (
@@ -21,26 +22,38 @@ export default function Hero() {
       <div className="absolute inset-0 bg-black/40" />
 
       {/* Content */}
-      <div
+      <div 
         className="absolute inset-0 flex flex-col items-center text-white text-center z-10 px-4 
                    justify-between py-20 sm:py-24 md:py-28 lg:py-0 lg:justify-center"
       >
         {/* Heading */}
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black font-heading mb-4 leading-tight">
+        <motion.h1 
+             initial={{opacity: 0, y:12}} 
+             animate={{opacity: 1, y:0}}
+             transition={{duration:0.7, ease:"easeInOut"}}
+          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black font-heading mb-4 leading-tight">
           Intelligence in Motion
           <br />
           <span className="text-chart-4">Shaping the Future of Robotics</span>
-        </h1>
+        </motion.h1>
 
         {/* Paragraph (hidden on small screens) */}
-        <p className="hidden md:block text-base sm:text-lg md:text-xl mb-6 font-light leading-relaxed max-w-xl sm:max-w-2xl">
+        <motion.p 
+             initial={{opacity: 0, y:12}} 
+             animate={{opacity: 1, y:0}}
+             transition={{delay: 0.3, duration: 0.7}}
+        className="hidden md:block text-base sm:text-lg md:text-xl mb-6 font-light leading-relaxed max-w-xl sm:max-w-2xl">
           Pioneering the next generation of intelligent systems through innovation,
           collaboration, and creativity — inspiring students to build the future
           of robotics and automation.
-        </p>
+        </motion.p>
 
         {/* Buttons */}
-        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center w-full sm:w-auto px-2">
+        <motion.div 
+             initial={{opacity: 0, y:12}} 
+             animate={{opacity: 1, y:0}}
+             transition={{delay: 0.4, duration: 0.7}}
+        className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center w-full sm:w-auto px-2">
           <Button
             size="lg"
             className="flex-1 sm:flex-none w-full sm:w-48 bg-chart-2/70 hover:bg-chart-2/90 
@@ -58,7 +71,7 @@ export default function Hero() {
           >
             Active Projects
           </Button>
-        </div>
+        </motion.div>
 
         {/* Animated robot icon — visible only on large screens */}
         <div className="hidden lg:block absolute bottom-2 left-1/2 -translate-x-1/2 z-20">
