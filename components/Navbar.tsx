@@ -13,7 +13,7 @@ export default function Navbar(){
 
                 <div className="flex items-center space-x-3">
                     <Image src="/logo.png" alt="Logo" width={70} height={70}/>
-                    <h1 className="text-2xl font-black font-heading text-primary">
+                    <h1 className="text-2xl font-semibold font-heading text-primary">
                         Laboratory of Robotics & Automation
                     </h1>
                 </div>
