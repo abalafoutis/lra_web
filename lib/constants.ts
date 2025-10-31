@@ -9,22 +9,22 @@ export const navItems = [
 export const programs = [
     { id:1,
       title: "Teaching",
-      description: "My forth description my friend",
+      description: "Empowering students through hands-on learning in robotics, automation, and intelligent systems.",
       image: "/teach.jpg"
     },
     { id:2,
       title: "Research Topics",
-      description: "My first description my friend",
+      description: "Exploring cutting-edge research in robotics, AI, and advanced automation technologies.",
       image: "/research.jpg"
     },
     { id:3,
       title: "People",
-      description: "My second description my friend",
+      description: "A dynamic team of researchers, engineers, and students driving innovation in robotics and automation.",
       image: "/people.jpg"
     },
     { id:4,
       title: "Projects",
-      description: "My third description my friend",
+      description: "Innovative projects shaping the future of intelligent systems and real-world robotic applications.",
       image: "/projects.png"
     },
 

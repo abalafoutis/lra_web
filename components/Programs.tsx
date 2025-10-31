@@ -71,7 +71,7 @@ export default function Programs() {
                                 </motion.p>
                                 <div>
                                     <Button variant="outline" className="w-full 
-                                     transition-colors duration-300 group-hover: bg-primary group-hover:text-primary-foreground">
+                                     transition-colors duration-300 group-hover: bg-ring group-hover:text-muted-foreground">
                                         Learn more
                                     </Button>
                                 </div>
